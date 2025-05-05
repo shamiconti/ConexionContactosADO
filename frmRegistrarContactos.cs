@@ -17,8 +17,6 @@ namespace pryContiConexionContactosBD
             InitializeComponent();
         }
 
-        clsContactos ObjContactos = new clsContactos();
-
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             if (txtNombre.Text == "")
@@ -74,9 +72,11 @@ namespace pryContiConexionContactosBD
             }
         }
 
+        clsContactos ObjContactos = new clsContactos();
+
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            ObjContactos.CargarCategorias(dgvMostrar);
+            ObjContactos.MostrarContactos(dgvMostrar);
         }
     }
 }

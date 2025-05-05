@@ -38,7 +38,7 @@ namespace pryContiConexionContactosBD
         }
 
 
-        public void CargarCategorias(DataGridView dgvMostrar)
+        public void MostrarContactos(DataGridView dgvMostrar)
         {
             using (SqlConnection conexion = clsConexion.ObtenerConexion())
             {
