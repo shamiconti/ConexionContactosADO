@@ -29,11 +29,6 @@ namespace pryContiConexionContactosBD
                     comando.Parameters.AddWithValue("@Categoria", Categoria);
 
                     int resultado = comando.ExecuteNonQuery();
-
-                    if (resultado > 0)
-                        MessageBox.Show("✅ Contacto agregado correctamente.");
-                    else
-                        MessageBox.Show("⚠️ No se pudo agregar el contacto.");
                 }
                 catch (Exception ex)
                 {
